@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <title>Download</title>
+        <link rel="stylesheet"
+          type="text/css"
+          href="responsive.css">
+    <script src="https://kit.fontawesome.com/b5e6c8d7d5.js"
+    crossorigin="anonymous"></script>
+    <script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("dropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    <body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="DigitalWave.mp4 "type="video/mp4" >
+        </video>
+    <div class="main">
+        <div class="navigation">   
+        <div class="Menu" title="Menu of Contents">
+            <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+          <div id="dropdown" class="dropdown-content">
+            <a href="responsivelayout.html" class="About the program">Home/Main Page</a>
+            <a href="requirements.html" title="System Requirements">Requirements</a>
+            <a href="about.html" class="About the program">About Artemis</a>
+          </div>
+        </div>
+        </div>
+        <div class="content">
+            <p class="title">Download Artemis</p>
+         <a href="Artemis.zip">Download Here</a>
+            <p>Feel free to give feedback by emailing lorence.uyanib@gmail.com in Gmail</p>
+        <p>Note: Artemis is still Work in Progress</p>
+        </div>   
+    </div>
+    </body>
+</html>

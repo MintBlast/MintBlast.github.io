@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <title>Welcome</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="responsive.css">
+    <script src="https://kit.fontawesome.com/b5e6c8d7d5.js" crossorigin="anonymous"></script>
+    <script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("dropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+    
+    </script>
+<head>
+    <title>Responsive Page</title>
+    </head>
+
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="DigitalWave.mp4 "type="video/mp4" >
+        </video>
+    <div class="main">
+        <div class="navigation">   
+            <div class="Menu" title="Menu of Contents">
+                <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+              <div id="dropdown" class="dropdown-content">
+                <a href="requirements.html" title="System Requirements">Requirements</a>
+                <a href="about.html" class="About the program">About</a>
+                <a href="download.html" class="Download Artemis!">Download Program</a>
+              </div>
+        </div>
+                       
+    </div>
+    <div class="intro">
+      <h1>Artemis</h1>
+      <p>Artemis is a chatbot with special abilities</p>
+        <li>Open programs such as Steam and Google</li> 
+        <li>Friendly user-interface</li>
+        <li>Shows and tells basic needs such as dates and reminders</li>
+    </div> 
+    </div>
+    </body>
+    
+</html>

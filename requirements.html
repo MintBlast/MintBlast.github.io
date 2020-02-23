@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head><title>Requirements</title></head>
+    <link rel="stylesheet"
+          type="text/css"
+          href="responsive.css">
+    <script src="https://kit.fontawesome.com/b5e6c8d7d5.js"
+    crossorigin="anonymous"></script>
+    <script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("dropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="DigitalWave.mp4 "type="video/mp4" >
+        </video>
+<div class="main">
+    <h1>
+        System Requirements
+    </h1>
+    <div class="navigation">   
+        <div class="Menu" title="Menu of Contents">
+            <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+          <div id="dropdown" class="dropdown-content">
+            <a href="responsivelayout.html" title="Home">Home/Main Page</a>
+            <a href="about.html" class="About the program">About</a>
+            <a href="download.html" class="Download Artemis!">Download Program</a>
+          </div>
+        </div>
+    </div>
+<div class="content">
+        <p>Requirements:</p>
+        <li> Windows 10 computer (MacOS is in progress)</li>
+        <li> 2 MB of space</li>
+    </div>
+    
+    </div>
+    </body>
+</html>
