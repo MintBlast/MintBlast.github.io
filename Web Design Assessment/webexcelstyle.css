@@ -1,0 +1,128 @@
+.content{
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: "Bahnschrift Light";
+    margin: auto;
+    text-align: left;
+    color: black;
+    height: 500px;
+    width: 800px; 
+    z-index: 1;
+}
+
+.intro{
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: "Bahnschrift Light";
+    margin: auto;
+    text-align: center;
+    color: black;
+    height: 500px;
+    width: 800px; 
+    z-index: 1;
+}
+
+.navigation{
+    margin-top: auto;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: "Bahnschrift Light";
+    text-align: center;
+    height: 90px;
+    width: 100%;
+    z-index: 2;
+}
+
+#excelBGVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -5;   
+}
+
+.tntbutton{
+    background-color: #3366ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.tntbutton:hover{
+    background-color: #002db3;
+    color: white;
+}
+
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+
+.darkmodebutton{
+    background-color: #8c8c8c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.darkmodebutton:hover{
+    background-color: #333333;
+    color: white;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+.dark-mode-content{
+    color: white;
+}
+
+@font-face {
+    font-family: "Dyslexie Regular";
+    src: url(fonts/Dyslexie%20Regular.woff) format('woff');
+}
+
+.dyslexicfont{
+    font-family: "Dyslexie Regular";
+    background-color: #00ff80;
+    border: none;
+    color: white;
+    padding: 10px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.dyslexicfont-content {
+    font-family: "Dyslexie Regular";
+    font-size: 25px;
+}
+
+.dyslexicfont:hover{
+    background-color: #008040;
+    color: white;
+}
+
