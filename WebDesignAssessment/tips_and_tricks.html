@@ -9,7 +9,7 @@
 function darkmode(){
     var element = document.body;
     element.classList.toggle("dark-mode");
-    var content = document.getElementById("mainContent");
+    var content = document.getElementById("TipContent");
     content.classList.toggle("dark-mode-content");
     
 var elementButton = document.getElementById("toggleButton");
@@ -36,10 +36,9 @@ function fontToggle(){
 <button class="tntbutton" type="button" onclick="window.location.href = 'index.html';">
    Home</button> 
 <button class="tntbutton"
-onclick="window.location.href = 'tips_and_tricks.html';">Tips and Tricks</button> 
+onclick="window.location.href = 'about.html';">About Us</button> 
 <button class="tntbutton" type="button" onclick="window.location.href = 'what_you_can_do.html';">What You Can Do</button>
-<button class="tntbutton">
-    <a href="join.html"></a>Join and Contribute</button>
+<button class="tntbutton" type="button" onclick="window.location.href = 'contribute.html';">Join and Contribute</button>
 <button class="tntbutton" type="button" onclick="window.location.href = 'sources.html';">Sources</button>
 <button id="toggleButton" class="darkmodebutton" onclick="darkmode()">
     Toggle Dark Theme
@@ -49,9 +48,17 @@ onclick="window.location.href = 'tips_and_tricks.html';">Tips and Tricks</button
 </button>
 </div>
     
-<div id="mainContent" class="content">
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="classbtn" onclick="closeNav()">&times;</a>
-    <a href="#">Proper Handwashing</a>
     
-       </div>    
+    
+<!-- Side navigation -->
+<div class="sidenav">
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Page content -->
+<div id="TipContent" class="main">
+Lorem Ipsum
+</div> 

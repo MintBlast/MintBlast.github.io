@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>  
-<title>Join and Contribute</title>    
+<html>
+<title>Sign Up</title>
 <link rel="stylesheet"
       type="text/css"
       href="webexcelstyle.css">
@@ -23,7 +23,7 @@ var elementButton = document.getElementById("toggleButton");
 function fontToggle(){
     var element = document.body;
     element.classList.toggle("dyslexicfont-content");
-    var content = document.getElementById("Logincontainer");
+    var content = document.getElementById("mainContent");
     content.classList.toggle("dyslexicfont-content");
 }
     
@@ -51,27 +51,35 @@ function fontToggle(){
 </button>
 </div>
 
-  
-<div id="mainContent" class="content">
-<form action="action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="Photos/img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
-  
-  <div id="Logincontainer" class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+<div id="mainContent" class="content">    
+<form action="action_page.php" style="border:1px solid #ccc">
+  <div  class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <button type="submit" class="tntbutton">Login</button>
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
     <label>
-      <input type="checkbox" checked="checked" name="remember"> <p >Remember me</p>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
     </label>
-          <span class="psw">Forgot <a href="#" >password?</a></span>   
-            <p>Want to become a member? <a href="sign_up.html">Sign up here!</a></p>
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms and Privacy</a>.</p>
+      
+      <p>Already have an account? <a href="contribute.html">Log In Here!</a></p>  
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
     </div>
+  </div>
 </form>
+
 </div>
 </body>
