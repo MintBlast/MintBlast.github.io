@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Tips and Tricks</title>
+<title>Proper Handwash</title>
 <link rel="stylesheet"
       type="text/css"
       href="webexcelstyle.css">
@@ -23,8 +23,8 @@ var elementButton = document.getElementById("toggleButton");
 function fontToggle(){
     var element = document.body;
     element.classList.toggle("dyslexicfont-content");
-    var content = document.getElementById("TipContent");
-    content.classList.toggle("dyslexicfont-content");
+    var content = document.getElementById("AdvicePage");
+    content.classList.toggle("dyslexicfont-content");    
 }
     
 </script> 
@@ -46,20 +46,26 @@ onclick="window.location.href = 'about.html';">About Us</button>
 <button id="fontToggle" class="dyslexicfont" onclick="fontToggle()">
      Toggle Dyslexic Font
 </button>
-</div>
+</div> 
     
-    
-    
-<!-- Side navigation -->
+<div id="TipContent" class="main">    
+<!-- Side navigation -->    
 <div class="sidenav">
-  <a href="handwash.html">Handwashing</a>
+  <a href="handwash.html">Proper Handwashing</a>
   <a href="dispose.html">Rubbish Disposal</a>
   <a href="conserve.html">Conserving Resources</a>
 </div>
 
 <!-- Page content -->
-<div id="TipContent" class="main">
-<p>This is the Tips and Tricks page, this page gives friendly and educational advices.</p>
-<br>
-<p1>Select a topic on the left to get started!</p1>
+<div id="AdvicePage">
+<h2>Proper Handwashing</h2>
+<img src="Photos/how_to_handwash_lge.gif" alt="Proper Handwashing Process">    
+<p>To properly wash hands, follow the instructions from above.</p>
+<br>    
+<p1>Washing hands is one of the most important process when it comes to basic hygiene. It is recommended to was h your hands regularly and should be done when:</p1>
+<ul>
+    <li>Before handling food</li>
+    <li>After going outside</li>
+    <li>Before eating food</li>
+</ul>    
 </div> 
