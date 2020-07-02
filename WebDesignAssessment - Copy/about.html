@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>About Us</title>
+<link rel="stylesheet"
+      type="text/css"
+      href="webexcelstyle.css">
+<script src="https://kit.fontawesome.com/b5e6c8d7d5.js" crossorigin="anonymous"></script>
+<script>
+function darkmode(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    var content = document.getElementById("mainContent");
+    content.classList.toggle("dark-mode-content");
+    
+var elementButton = document.getElementById("toggleButton");
+    if(elementButton.innerHTML == "Toggle Dark Theme") {
+        elementButton.innerHTML = "Toggle Light Theme";
+    } else {
+        elementButton.innerHTML = "Toggle Dark Theme";
+    }
+}
+    
+function fontToggle(){
+    var element = document.body;
+    element.classList.toggle("dyslexicfont-content");
+    var content = document.getElementById("mainContent");
+    content.classList.toggle("dyslexicfont-content");
+}
+    
+</script> 
+</html>
+
+<body>
+
+<div class="navigation">
+<button class="tntbutton" type="button"                              onclick="window.location.href = 'index.html';">
+   Home</button> 
+<button class="tntbutton"
+    onclick="window.location.href = 'tips_and_tricks.html';">Tips and Tricks</button> 
+<button class="tntbutton" type="button"
+    onclick="window.location.href = 'what_you_can_do.html';">What You Can Do</button>
+<button class="tntbutton" onclick="window.location.href= 'contribute.html';">Join and Contribute</button>
+<button class="tntbutton" type="button" onclick="window.location.href = 'sources.html';">Sources</button>
+<button id="toggleButton" class="darkmodebutton" onclick="darkmode()">
+    Toggle Dark Theme
+</button>
+<button id="fontToggle" class="dyslexicfont" onclick="fontToggle()">
+     Toggle Dyslexic Font
+</button>
+</div>
+
+<div id="mainContent" class="content">
+<h1>About Us</h1>
+<p>What is Project: Excel?</p>
+<p1>Project: Excel is a educational website and our goal is to educate people making the world a better place</p1>
+<br>
+<p2>What we do is to educate people and meet one of the
+<a href ="https://sustainabledevelopment.un.org/?menu=1300">Sustainable Development Goals from the United Nations</a> which is <a href="https://sustainabledevelopment.un.org/sdg4">Goal 4: Quality Education</a></p2>
+<br>
+<br>
+<p3>What we will educate about are:</p3>
+    <ul>
+    <li>Proper and Healthy Sanitation</li>
+    <li>Taking Care of the Environment</li>
+    <li>Proper Consumption</li>
+    <li>And more!</li>
+    </ul>
+
+</div>
+</body>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>  
+<title>Join and Contribute</title>    
+<link rel="stylesheet"
+      type="text/css"
+      href="webexcelstyle.css">
+<script src="https://kit.fontawesome.com/b5e6c8d7d5.js" crossorigin="anonymous"></script>
+<script>
+function darkmode(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    var content = document.getElementById("mainContent");
+    content.classList.toggle("dark-mode-content");
+    
+var elementButton = document.getElementById("toggleButton");
+    if(elementButton.innerHTML == "Toggle Dark Theme") {
+        elementButton.innerHTML = "Toggle Light Theme";
+    } else {
+        elementButton.innerHTML = "Toggle Dark Theme";
+    }
+}
+    
+function fontToggle(){
+    var element = document.body;
+    element.classList.toggle("dyslexicfont-content");
+    var content = document.getElementById("Logincontainer");
+    content.classList.toggle("dyslexicfont-content");
+}
+    
+
+    
+</script> 
+</html>
+
+<body>
+
+<div class="navigation">
+<button class="tntbutton" type="button"                              onclick="window.location.href = 'index.html';">
+   Home</button> 
+<button class="tntbutton"
+    onclick="window.location.href = 'tips_and_tricks.html';">Tips and Tricks</button> 
+<button class="tntbutton" type="button"
+    onclick="window.location.href = 'what_you_can_do.html';">What You Can Do</button>
+<button class="tntbutton" onclick="window.location.href = 'about.html';">About Us</button>
+<button class="tntbutton" type="button" onclick="window.location.href = 'sources.html';">Sources</button>
+<button id="toggleButton" class="darkmodebutton" onclick="darkmode()">
+    Toggle Dark Theme
+</button>
+<button id="fontToggle" class="dyslexicfont" onclick="fontToggle()">
+     Toggle Dyslexic Font
+</button>
+</div>
+
+  
+<div id="mainContent" class="content">
+<form action="action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="Photos/img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+  
+  <div id="Logincontainer" class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="tntbutton">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> <p >Remember me</p>
+    </label>
+          <span class="psw">Forgot <a href="#" >password?</a></span>   
+            <p>Want to become a member? <a href="sign_up.html">Sign up here!</a></p>
+    </div>
+</form>
+</div>
+</body>

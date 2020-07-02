@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome to Project: Excel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+      type="text/css"
+      href="webexcelstyle.css">
+<script src="https://kit.fontawesome.com/b5e6c8d7d5.js" crossorigin="anonymous"></script>    
+<script>
+function darkmode(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    var content = document.getElementById("mainContent");
+    content.classList.toggle("dark-mode-content");
+    
+var elementButton = document.getElementById("toggleButton");
+    if(elementButton.innerHTML == "Toggle Dark Theme") {
+        elementButton.innerHTML = "Toggle Light Theme";
+    } else {
+        elementButton.innerHTML = "Toggle Dark Theme";
+    }
+}
+</script>    
+
+<body>
+
+<div class="navigation">
+<button class="tntbutton" type="button"
+    onclick="window.location.href = 'tips_and_tricks.html';">Tips and Tricks</button> 
+<button class="tntbutton" type="button"
+    onclick="window.location.href = 'about.html';">About Us
+    </button>
+<button class="tntbutton" type="button"
+    onclick="window.location.href = 'what_you_can_do.html';">What You Can Do</button>
+<button class="tntbutton" onclick="window.location.href= 'contribute.html';">Join and Contribute</button>
+<button class="tntbutton" type="button"
+    onclick="window.location.href = 'sources.html';">Sources</button>
+<button class="darkmodebutton" onclick="darkmode()">
+Toggle Dark Theme
+</button>
+</div>
+<div class="intro">
+<video autoplay muted loop id="excelBGVideo">
+    <source src="Photos/BackgroundVideo.mp4" type="video/mp4">
+</video>
+    <div class="centered">
+        This is Project: Excel
+    </div>
+</div>
+</body>
+    
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>Conserving Resources</title>
+<link rel="stylesheet"
+      type="text/css"
+      href="webexcelstyle.css">
+<script src="https://kit.fontawesome.com/b5e6c8d7d5.js" crossorigin="anonymous"></script>
+<script>
+function darkmode(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    var content = document.getElementById("AdvicePage");
+    content.classList.toggle("dark-mode-content");
+    
+var elementButton = document.getElementById("toggleButton");
+    if(elementButton.innerHTML == "Toggle Dark Theme") {
+        elementButton.innerHTML = "Toggle Light Theme";
+    } else {
+        elementButton.innerHTML = "Toggle Dark Theme";
+    }
+}
+    
+function fontToggle(){
+    var element = document.body;
+    element.classList.toggle("dyslexicfont-content");
+    var content = document.getElementById("AdvicePage");
+    content.classList.toggle("dyslexicfont-content");
+}
+    
+</script> 
+</html>
+
+<body>
+
+<div class="navigation">
+<button class="tntbutton" type="button" onclick="window.location.href = 'index.html';">
+   Home</button> 
+<button class="tntbutton"
+onclick="window.location.href = 'about.html';">About Us</button> 
+<button class="tntbutton" type="button" onclick="window.location.href = 'what_you_can_do.html';">What You Can Do</button>
+<button class="tntbutton" type="button" onclick="window.location.href = 'contribute.html';">Join and Contribute</button>
+<button class="tntbutton" type="button" onclick="window.location.href = 'sources.html';">Sources</button>
+<button id="toggleButton" class="darkmodebutton" onclick="darkmode()">
+    Toggle Dark Theme
+</button>
+<button id="fontToggle" class="dyslexicfont" onclick="fontToggle()">
+     Toggle Dyslexic Font
+</button>
+</div>
+    
+    
+<div id="TipContent" class="main">    
+<!-- Side navigation -->
+<div class="sidenav">
+  <a href="handwash.html">Handwashing</a>
+  <a href="dispose.html">Waste Management</a>
+  <a href="conserve.html">Conserving Resources</a>
+</div>
+
+<!-- Page content -->
+<div id="AdvicePage" class="content">    
+<h2>Conserving Resources</h2>
+<img>    
+<br>
+
+</div>   
+</div> 

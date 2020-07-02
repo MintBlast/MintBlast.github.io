@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>What You Can Do</title>
+<link rel="stylesheet"
+      type="text/css"
+      href="webexcelstyle.css">
+<script src="https://kit.fontawesome.com/b5e6c8d7d5.js" crossorigin="anonymous"></script>
+<script>
+function darkmode(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    var content = document.getElementById("mainContent");
+    content.classList.toggle("dark-mode-content");
+    
+var elementButton = document.getElementById("toggleButton");
+    if(elementButton.innerHTML == "Toggle Dark Theme") {
+        elementButton.innerHTML = "Toggle Light Theme";
+    } else {
+        elementButton.innerHTML = "Toggle Dark Theme";
+    }
+}
+    
+function fontToggle(){
+    var element = document.body;
+    element.classList.toggle("dyslexicfont-content");
+    var content = document.getElementById("mainContent");
+    content.classList.toggle("dyslexicfont-content");
+}
+    
+</script> 
+</html>
+
+<body>
+
+<div class="navigation">
+<button class="tntbutton" type="button" onclick="window.location.href = 'index.html';">
+   Home</button> 
+<button class="tntbutton"
+onclick="window.location.href = 'tips_and_tricks.html';">Tips and Tricks</button> 
+<button class="tntbutton" onclick="window.location.href = 'about.html';">About Us</button>
+<button class="tntbutton" onclick="window.location.href= 'contribute.html';">Join and Contribute</button>
+<button class="tntbutton"
+    onclick="window.location.href='sources.html';">Sources</button> 
+<button id="toggleButton" class="darkmodebutton" onclick="darkmode()">
+    Toggle Dark Theme
+</button>
+<button id="fontToggle" class="dyslexicfont" onclick="fontToggle()">
+     Toggle Dyslexic Font
+</button>
+</div>
+
+<div id="mainContent" class="content">
+<h1>What You Can Do</h1>
+    <p>If you want to help us expand and spread advices, tips and news. You can <a href="contribute.html">join and contribute us</a> all for free or share our content in social media.</p>
+<br>
+<p1>We also support non-government organisations such as WHO, World Vision and more! Our content is sourced from these organisations as well.</p1>
+<br>
+<p2>To know more visit the Sources button below</p2> 
+<br>
+<button class="tntbutton" onclick="window.location.href = 'sources.html';">Sources</button> 
+</div>
+        
+</body>
